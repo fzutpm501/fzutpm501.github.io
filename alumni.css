@@ -11,3 +11,8 @@
   object-fit: cover;
   object-position: center 22%;
 }
+
+.hero-image {
+  object-position: center center;
+  filter: saturate(.9) contrast(1.04);
+}
