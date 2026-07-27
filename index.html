@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="alumni.css">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -107,11 +108,15 @@
 
     <section class="alumni section" id="alumni">
       <div class="section-label">04 / 毕业去向</div>
-      <div class="alumni-header"><div><h2>从 TPM 出发，走向更广阔的坐标。</h2><p>这里将记录课题组毕业生的成长轨迹。以下内容为版式示例，待替换为真实信息。</p></div>
+      <div class="alumni-header"><div><h2>从 TPM 出发，走向更广阔的坐标。</h2><p>这里记录课题组毕业生的成长轨迹与发展去向。</p></div>
         <div class="filters" role="group" aria-label="筛选毕业去向"><button class="active" data-filter="all">全部</button><button data-filter="academic">高校科研</button><button data-filter="industry">企业</button><button data-filter="public">公共部门</button></div>
       </div>
       <div class="alumni-grid">
-        <article class="alumni-card" data-type="academic"><div class="avatar">示例</div><div><span>2025届 · 博士</span><h3>毕业生姓名</h3><p>某高校 / 科研机构</p></div><i data-lucide="graduation-cap"></i></article>
+        <article class="alumni-card" data-type="academic">
+          <div class="avatar alumni-photo">陈艳生<img src="assets/chen-yansheng.jpg" alt="陈艳生" onerror="this.style.display='none'"></div>
+          <div><span>2024届 · 硕士</span><h3>陈艳生</h3><p>中南大学攻读博士学位<br>导师：田红旗院士</p></div>
+          <i data-lucide="graduation-cap"></i>
+        </article>
         <article class="alumni-card" data-type="industry"><div class="avatar">示例</div><div><span>2024届 · 硕士</span><h3>毕业生姓名</h3><p>交通科技 / 规划设计企业</p></div><i data-lucide="building-2"></i></article>
         <article class="alumni-card" data-type="public"><div class="avatar">示例</div><div><span>2023届 · 硕士</span><h3>毕业生姓名</h3><p>政府 / 事业单位</p></div><i data-lucide="landmark"></i></article>
       </div>
@@ -126,7 +131,7 @@
       </div></div>
     </section>
 
-    <section class="join" id="join"><div><p class="eyebrow"><span></span> Join us</p><h2>和我们一起，研究交通的未来。</h2><p>欢迎对交通规划、公共交通、新能源汽车与车路协同感兴趣的同学联系课题组。</p></div><a class="button button-light" href="mailto:your-email@example.com">联系我们 <i data-lucide="mail"></i></a></section>
+    <section class="join" id="join"><div><p class="eyebrow"><span></span> Join us</p><h2>和我们一起，研究交通的未来。</h2><p>欢迎对交通规划、公共交通、新能源汽车与车路协同感兴趣的同学联系课题组。</p></div><a class="button button-light" href="mailto:laiyuanwen@fzu.edu.cn">联系我们 <i data-lucide="mail"></i></a></section>
   </main>
 
   <footer><div class="footer-brand"><span class="brand-mark">TPM</span><div><strong>TPM课题组</strong><p>Transportation Planning and Management</p></div></div><p>© <span id="year"></span> TPM Research Group. All rights reserved.</p><a href="#top" aria-label="返回顶部"><i data-lucide="arrow-up"></i></a></footer>
