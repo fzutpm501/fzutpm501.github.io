@@ -18,12 +18,24 @@
 }
 
 .contact-emails {
+  font-size: 18px;
   font-style: normal;
   line-height: 1.8;
   overflow-wrap: anywhere;
 }
 
+.join > div > p:not(.eyebrow) {
+  font-size: 18px;
+}
+
 .contact-emails a {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .contact-emails,
+  .join > div > p:not(.eyebrow) {
+    font-size: 17px;
+  }
 }
