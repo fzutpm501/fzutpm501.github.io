@@ -16,3 +16,14 @@
   object-position: center center;
   filter: saturate(.9) contrast(1.04);
 }
+
+.contact-emails {
+  font-style: normal;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.contact-emails a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
