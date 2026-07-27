@@ -1,0 +1,111 @@
+.alumni-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.alumni-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.hero-image {
+  object-position: center center;
+  filter: saturate(.9) contrast(1.04);
+}
+
+.contact-emails {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.join > div > p:not(.eyebrow) {
+  font-size: 18px;
+}
+
+.contact-emails a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Improve readability for navigation, supporting copy, and metadata. */
+.nav {
+  font-size: 16px;
+}
+
+.section-label {
+  font-size: 14px;
+}
+
+.intro-copy {
+  font-size: 19px;
+}
+
+.stats span {
+  font-size: 15px;
+}
+
+.team-heading > p,
+.research-heading > p,
+.alumni-header p,
+.news-layout > div > p {
+  font-size: 18px;
+}
+
+.teacher-role {
+  font-size: 13px;
+}
+
+.teacher-info > p:not(.teacher-role),
+.research-item p {
+  font-size: 17px;
+}
+
+.faculty-card .teacher-info > p:not(.teacher-role) {
+  font-size: 16px;
+}
+
+.teacher-info h3 small,
+.faculty-card .teacher-info h3 small {
+  font-size: 15px;
+}
+
+.teacher-tags span,
+.faculty-card .teacher-tags span,
+.profile-link,
+.research-no,
+.news-list time,
+.news-list span {
+  font-size: 14px;
+}
+
+.filters button {
+  font-size: 16px;
+}
+
+.news-list h3 {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .contact-emails,
+  .join > div > p:not(.eyebrow),
+  .intro-copy,
+  .team-heading > p,
+  .research-heading > p,
+  .alumni-header p,
+  .news-layout > div > p,
+  .teacher-info > p:not(.teacher-role),
+  .research-item p {
+    font-size: 17px;
+  }
+
+  .faculty-card .teacher-info > p:not(.teacher-role) {
+    font-size: 16px;
+  }
+}
