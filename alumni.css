@@ -1,0 +1,208 @@
+.alumni-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.alumni-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.alumni-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.alumni-card {
+  min-height: 175px;
+  padding: 15px;
+}
+
+.alumni-card .avatar {
+  width: 42px;
+  height: 42px;
+  font-size: 13px;
+}
+
+.alumni-card h3 {
+  font-size: 22px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.alumni-card span {
+  font-size: 14px;
+}
+
+.alumni-card p {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.alumni-card > svg {
+  top: 15px;
+  right: 15px;
+}
+
+.hero-image {
+  object-position: center center;
+  filter: saturate(.9) contrast(1.04);
+}
+
+.contact-emails {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.join > div > p:not(.eyebrow) {
+  font-size: 22px;
+}
+
+.contact-emails a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Improve readability for navigation, supporting copy, and metadata. */
+.nav {
+  font-size: 16px;
+}
+
+.section-label {
+  font-size: 30px;
+}
+
+.intro-copy {
+  font-size: 19px;
+}
+
+.stats span {
+  font-size: 15px;
+}
+
+.team-heading > p,
+.research-heading > p,
+.alumni-header p,
+.news-layout > div > p {
+  font-size: 18px;
+}
+
+.teacher-role {
+  font-size: 13px;
+}
+
+.teacher-info > p:not(.teacher-role),
+.research-item p {
+  font-size: 17px;
+}
+
+.faculty-card .teacher-info > p:not(.teacher-role) {
+  font-size: 16px;
+}
+
+.teacher-info h3 small,
+.faculty-card .teacher-info h3 small {
+  font-size: 15px;
+}
+
+.teacher-tags span,
+.faculty-card .teacher-tags span,
+.profile-link,
+.news-list time,
+.news-list span {
+  font-size: 14px;
+}
+
+.research-no {
+  font-size: 20px;
+}
+
+.filters button {
+  font-size: 16px;
+}
+
+.news-list h3 {
+  font-size: 18px;
+}
+
+.news-list .news-item {
+  display: grid;
+  grid-template-columns: 86px 1fr 32px;
+  gap: 20px;
+  align-items: center;
+  padding: 27px 0;
+  border-bottom: 1px solid var(--line);
+  transition: background-color .2s, padding .2s;
+}
+
+.news-list .news-item:hover,
+.news-list .news-item:focus-visible {
+  background: var(--paper);
+  padding-right: 12px;
+  padding-left: 12px;
+  outline: none;
+}
+
+@media (max-width: 1400px) {
+  .alumni-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1100px) {
+  .alumni-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .alumni-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-emails,
+  .intro-copy,
+  .team-heading > p,
+  .research-heading > p,
+  .alumni-header p,
+  .news-layout > div > p,
+  .teacher-info > p:not(.teacher-role),
+  .research-item p {
+    font-size: 17px;
+  }
+
+  .join > div > p:not(.eyebrow) {
+    font-size: 19px;
+  }
+
+  .faculty-card .teacher-info > p:not(.teacher-role) {
+    font-size: 16px;
+  }
+
+  .research-no {
+    font-size: 18px;
+  }
+
+  .news-list .news-item {
+    grid-template-columns: 68px 1fr 22px;
+  }
+
+  .alumni-card {
+    min-height: 185px;
+    padding: 20px;
+  }
+
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
